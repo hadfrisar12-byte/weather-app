@@ -1,0 +1,105 @@
+/* Mengatur font dasar dan reset margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Latar belakang halaman dengan gradien warna modern */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kontainer utama aplikasi */
+.weather-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Judul Aplikasi */
+.weather-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Bagian Input dan Tombol */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Warna placeholder di dalam input */
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff7e5f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.search-box button:hover {
+    background-color: #feb47b;
+}
+
+.search-box button:active {
+    transform: scale(0.95);
+}
+
+/* Bagian Hasil Cuaca */
+.weather-result {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.weather-result h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+#temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ffd700; /* Warna kuning emas untuk suhu */
+}
+
+#description {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #e0e0e0;
+}

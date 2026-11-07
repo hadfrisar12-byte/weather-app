@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Cuaca Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-container">
+        <h1>Cek Cuaca Kota</h1>
+        
+        <!-- Bagian Pencarian -->
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Masukkan nama kota...">
+            <button id="search-btn">Cari</button>
+        </div>
+
+        <!-- Bagian Hasil Cuaca -->
+        <div id="weather-result" class="weather-result">
+            <h2 id="city-name">-</h2>
+            <p id="temperature">-- °C</p>
+            <p id="description">Kondisi cuaca</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
